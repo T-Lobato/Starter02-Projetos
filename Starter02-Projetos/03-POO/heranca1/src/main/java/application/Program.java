@@ -42,20 +42,31 @@ public class Program {
 //              System.out.println("Updated!");
 //        }
 
-        // Exemplo de Sobrescrita
-        // Testando o método withDraw da classe Account
-        Account acc1 = new Account(1001, "Alex", 1000.0);
-        acc1.withDraw(200.0);
-        System.out.println(acc1.getBalance());
+//        // Exemplo de Sobrescrita
+//        // Testando o método withDraw da classe Account
+//        Account acc1 = new Account(1001, "Alex", 1000.0);
+//        acc1.withDraw(200.0);
+//        System.out.println(acc1.getBalance());
 
-        // Testando o método withDraw da classe SavingsAccount (sobrescrito sem a taxa de 5).
-        Account acc2 = new SavingsAccount(1002, "Maria", 1000.0, 0.01);
-        acc2.withDraw(200.0);
-        System.out.println(acc2.getBalance());
+//        // Testando o método withDraw da classe SavingsAccount (sobrescrito sem a taxa de 5).
+//        Account acc2 = new SavingsAccount(1002, "Maria", 1000.0, 0.01);
+//        acc2.withDraw(200.0);
+//        System.out.println(acc2.getBalance());
+//
+//        // Testando a chamada de um método da superclasse através do 'super'.
+//        Account acc3 = new BusinessAccount(1003, "Bob", 1000.0, 500.0);
+//        acc3.withDraw(200.0);
+//        System.out.println(acc3.getBalance());
 
-        // Testando a chamada de um método da superclasse através do 'super'.
-        Account acc3 = new BusinessAccount(1003, "Bob", 1000.0, 500.0);
-        acc3.withDraw(200.0);
-        System.out.println(acc3.getBalance());
+        // Entendendo Polimorfismo
+        // Chamando a mesma operacao, em variaveis do mesmo tipo (x e y) obtendo resultados diferentes.
+        Account x = new Account(1020, "Alex", 1000.0);
+        Account y = new SavingsAccount(1023,"Maria", 1000.0, 0.01);
+
+        x.withDraw(50.0);
+        y.withDraw(50.0);
+
+        System.out.println(x.getBalance());
+        System.out.println(y.getBalance());
     }
 }
