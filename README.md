@@ -1,5 +1,6 @@
-#Trilha Starter II | Insiders | Invillia
-####Repositório criado para armazenar projetos e exercícios feitos no decorrer da trilha starter II. 
+# Trilha Starter II | Insiders | Invillia
+
+#### Repositório criado para armazenar projetos e exercícios feitos no decorrer da trilha starter II. 
 
 **Em andamento...**
 
@@ -17,3 +18,4 @@
 
 <img src ="img\invillia-logo.png">
 
+ 
